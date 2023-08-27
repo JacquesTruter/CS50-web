@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="stylesheet.css">
-        <title>Search</title>
-    </head>
-    <body>
-        <div class="Header-link">
-            <a href="imageSearch.html" >Google Image Search</a>
-            <a href="advanceSearch.html" >Google Advance Search</a>
-        </div>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Search</title>
+  </head>
+  <body>
+    <div class="Header-link">
+      <a href="imageSearch.html">Google Image Search</a>
+      <a href="advanceSearch.html">Google Advance Search</a>
+      <img src="SMOOGLE.svg" alt="Corp logo" />
+    </div>
+    <div class="searchContainer">
+      <div id="divMainImage">
+        <img src="SMOOGLE.svg" id="smoogleimg" alt="Corp logo" />
+      </div>
+      <div class="searchdiv">
+        <form class="inputspan" action="https://google.com/search">
+          <input type="text" class="searchbox" name="q" placeholder="Search Le Google">
+          <div id="bottomdiv">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+          </div>
         </form>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
