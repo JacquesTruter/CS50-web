@@ -1,20 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-		<title>Advance Search</title>
-	</head>
-	<body>
-		<div class="Header-link">
-			<a href="index.html" >Google Search</a>
-			<a href="imageSearch.html" >Google Image Search</a>
-    </div> 	
-		<form action="https://google.com/search">
-			<input type="text" name="as_q">
-			<input type="text" name="as_epq">
-			<input type="text" name="as_oq">
-			<input type="text" name="as_eq">
-			<input type="submit" value="Advance Search">
-		</form>
-	</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Advance Search</title>
+  </head>
+  <body>
+    <div class="Header-container">
+      <div class="header-link-container">
+        <a href="imageSearch.html">Images</a>
+        <a href="advanceSearch.html">Advance</a>
+      </div>
+      <img id="smoogleHeadImg" src="SMOOGLE.svg" alt="Corp logo" />
+    </div>
+    <div id="search-container">
+      <form action="https://google.com/search">
+        <div style="display: flex; flex-direction: column;">
+          <div>
+            <span class="a">Find pages with...</span>
+            <span class="a"></span>
+            <span class="a">To do this in the search box.</span>
+          </div>           
+            <div>
+              <span class="a">all these words:</span>
+              <span class="a"><input value="" autofocus="autofocus" type="text"/></span>
+              <span class="a" style="font-size: x-small;">Type the important words: tri-colour rat terrier</span>
+            </div>          
+        </div>
+        <div>
+          <div>
+              <label class="a" > this exact word or phrase: </label>
+              <span class="a" ><input value="" type="text"/></span>
+              <label class="a" style="font-size: x-small;"> Put exact words in quotes: "rat terrier"</label>
+          </div>
+        </div>
+        <div >
+          <div >
+              <label class="a">any of these words:</label>
+              <span class="a"><input value="" style="width: 100%;" type="text"/></span>
+              <label class="a" style="font-size: x-small;">Type OR between all the words you want: miniature OR standard</label>
+          </div>
+
+        </div>
+        <div >
+          <div style="align-items: center; ">
+            <label class="a">none of these words:</label>
+            <span class="a"><input value="" type="text"/></span>
+            <span class="a" style="font-size: x-small;">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell" 
+            </span>
+          </div>
+        </div>
+        <input type="submit" value="Advance Search" />
+      </form>
+    </div>
+    <div id="footer">
+      <p>&copy; 2023 Smoogle</p>
+    </div>
+  </body>
 </html>

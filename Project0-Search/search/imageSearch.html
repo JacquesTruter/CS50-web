@@ -2,17 +2,40 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>Image Search</title>
   </head>
   <body>
-    <div class="Header-link">
-      <a href="index.html">Google Search</a>
-      <a href="advanceSearch.html">Google Advance Search</a>
+    <div class="Header-container">
+      <div class="header-link-container">
+        <a href="imageSearch.html">Images</a>
+        <a href="advanceSearch.html">Advance</a>
+      </div>
+      <img id="smoogleHeadImg" src="SMOOGLE.svg" alt="Corp logo" />
     </div>
-    <form action="https://www.google.com/search?q=" + q + tbm>
-      <input type="text" name="q" />
-      <input type="hidden" name="tbm" value="isch" />
-      <input type="submit" value="Image Search" />
-    </form>
+    <div id="search-container">
+      <div id="logo-container">
+        <img id="smoogleMainImg" src="SMOOGLE.svg" alt="Corp logo" />
+      </div>
+      <form action="https://www.google.com/search?q=" + q + tbm>
+        <input
+        id="search-box"
+        type="text"
+        class="searchbox"
+        name="q"
+        placeholder="Search Le Smoogle"
+      />
+        <input type="hidden" name="tbm" value="isch" /> 
+      </form>
+        <div id="button-container">
+          <button>Smoogle Search</button>
+          <button>I'm Feeling Lucky</button>
+        </div>
+      </form>
+    </div>
+    <div id="footer">
+      <p>&copy; 2023 Smoogle</p>
+    </div>
+    
   </body>
 </html>

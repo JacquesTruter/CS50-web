@@ -6,24 +6,33 @@
     <title>Search</title>
   </head>
   <body>
-    <div class="Header-link">
-      <a href="imageSearch.html">Google Image Search</a>
-      <a href="advanceSearch.html">Google Advance Search</a>
-      <img src="SMOOGLE.svg" alt="Corp logo" />
+    <div class="Header-container">
+      <div class="header-link-container">
+        <a href="imageSearch.html">Images</a>
+        <a href="advanceSearch.html">Advance</a>
+      </div>
+      <img id="smoogleHeadImg" src="SMOOGLE.svg" alt="Corp logo" />
     </div>
-    <div class="searchContainer">
-      <div id="divMainImage">
-        <img src="SMOOGLE.svg" id="smoogleimg" alt="Corp logo" />
+    <div id="search-container">
+      <div id="logo-container">
+        <img id="smoogleMainImg" src="SMOOGLE.svg" alt="Corp logo" />
       </div>
-      <div class="searchdiv">
-        <form class="inputspan" action="https://google.com/search">
-          <input type="text" class="searchbox" name="q" placeholder="Search Le Google">
-          <div id="bottomdiv">
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
-          </div>
-        </form>
-      </div>
+      <form action="https://google.com/search">
+        <input
+          id="search-box"
+          type="text"
+          class="searchbox"
+          name="q"
+          placeholder="Search Le Smoogle"
+        />
+        <div id="button-container">
+          <button>Smoogle Search</button>
+          <button>I'm Feeling Lucky</button>
+        </div>
+      </form>
+    </div>
+    <div id="footer">
+      <p>&copy; 2023 Smoogle</p>
     </div>
   </body>
 </html>
